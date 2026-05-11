@@ -332,9 +332,9 @@ Potential future improvements include:
 
 # Author
 
-Alexander Soromtochukwu Emeka-Akam
-Applied AI Student
-@
+Alexander Soromtochukwu Emeka-Akam<br />
+Applied AI Student<br />
+@<br />
 IUBH Berlin, Germany
 
 ---
