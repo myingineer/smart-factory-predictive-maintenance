@@ -138,6 +138,43 @@ Place the dataset inside:
 data/raw_sensor_data.csv
 ```
 
+# Dataset Preparation
+
+Place the dataset inside:
+
+```text
+data/raw_sensor_data.csv
+```
+
+After placing the dataset, open:
+
+```text
+app/config.py
+```
+
+Update the following configuration values to match your dataset columns:
+
+```python
+FEATURE_COLUMNS = {
+    "temperature": float,
+    "humidity": float,
+    "vibration": float,
+    "energy_consumption": float,
+    "pressure": float
+}
+
+TARGET_COLUMN = "maintenance_required"
+```
+
+You may also update:
+
+- Threshold values
+- Maintenance recommendations
+- File paths
+- API configuration
+
+depending on your dataset structure and industrial use case.
+
 ---
 
 # Data Cleaning
