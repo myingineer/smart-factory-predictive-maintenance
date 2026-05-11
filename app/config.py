@@ -58,3 +58,10 @@ PREDICTION_LOG_FILE = "data/prediction_logs.csv"
 RAW_DATASET_FILE = "data/raw_sensor_data.csv"
 
 CLEANED_DATASET_FILE = "data/cleaned_sensor_data.csv"
+
+
+# =========================
+# MODEL FILE
+# =========================
+
+MODEL_FILE_PATH = "models/model.pkl"

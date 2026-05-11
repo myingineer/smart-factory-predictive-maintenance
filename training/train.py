@@ -5,15 +5,15 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
-from app.config import FEATURE_COLUMNS, TARGET_COLUMN
+from app.config import FEATURE_COLUMNS, TARGET_COLUMN, MODEL_FILE_PATH, STREAMING_CSV_FILE, CLEANED_DATASET_FILE
 import pickle
 import os
 
 
 # Paths
-DATA_PATH = "data/cleaned_sensor_data.csv"
-STREAM_DATA_PATH = "data/streaming_data.csv"
-MODEL_PATH = "models/model.pkl"
+DATA_PATH = CLEANED_DATASET_FILE
+STREAM_DATA_PATH = STREAMING_CSV_FILE
+MODEL_PATH = MODEL_FILE_PATH
 
 # Load cleaned data
 df = pd.read_csv(DATA_PATH)
